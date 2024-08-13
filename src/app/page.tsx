@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import { BadgeCheck, CookingPot, HandCoins, HandPlatter } from "lucide-react";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -106,15 +107,15 @@ export default function Home() {
                         </ul>
                       </div>
                       <div className="flex flex-wrap justify-center gap-5 sm:justify-normal">
-                        <a
-                          href="#"
+                        <Link
+                          href="https://orderfiti.twisac.xyz/#/signup"
                           className="group relative z-10 inline-block"
                         >
                           <div className="btn is-large is-rounded is-lime">
-                            Book a Demo Today
+                            Get Started
                           </div>
                           <div className="is-rounded absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] bg-ColorLimetransition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -500,10 +501,11 @@ export default function Home() {
                   >
                     <p>
                       Orderfiti&apos;s Admin Dashboard is your gateway to
-                      streamlined operations and in-depth insights. Tailored for
-                      restaurant owners and managers, this powerful tool
-                      centralizes all essential functions and provides
-                      comprehensive control over your business.
+                      streamlined operations and in-depth insights. A
+                      comprehensive management system that handles customer
+                      orders, waiter assignments restaurant owners and managers,
+                      this powerful tool centralizes all essential functions and
+                      provides comprehensive control over your business.
                     </p>
                   </div>
 
@@ -523,12 +525,15 @@ export default function Home() {
 
                 {/* Video Class List*/}
                 <div className="flex justify-center">
-                  <a href="#" className="group relative z-10 inline-block">
+                  <Link
+                    href="https://orderfiti.twisac.xyz/#/signup"
+                    className="group relative z-10 inline-block"
+                  >
                     <div className="btn is-large is-rounded is-lime">
-                      Book a Demo
+                      Get Started Now
                     </div>
                     <div className="is-rounded absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] bg-ColorLimetransition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* Section Container */}

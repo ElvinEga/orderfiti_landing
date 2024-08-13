@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { useEffect } from "react";
 const Navbar = () => {
@@ -187,15 +188,15 @@ const Navbar = () => {
             {/* Header Navigation */}
             {/* Header User Event */}
             <div className="flex items-center gap-6">
-              <a
-                href="signup.html"
+              <Link
+                href="https://orderfiti.twisac.xyz/#/signup"
                 className="group relative z-10 hidden sm:inline-block"
               >
                 <div className="btn is-rounded btn-animation group is-lime">
                   Sign up free
                 </div>
                 <div className="is-rounded absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] bg-ColorLime transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0" />
-              </a>
+              </Link>
               {/* Responsive Offcanvas Menu Button */}
               <div className="block lg:hidden">
                 <button
