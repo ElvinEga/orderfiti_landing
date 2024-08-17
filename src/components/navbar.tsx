@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const handleMenuClick = () => {
+    setIsActive(!isActive);
+  };
   useEffect(() => {
     const accordions = document.querySelectorAll(".accordion-item");
     accordions.forEach((item) => {
@@ -147,14 +151,19 @@ const Navbar = () => {
             {/* Header Logo */}
             {/* Header Navigation */}
             <div className="menu-block-wrapper">
-              <div className="menu-overlay" />
-              <nav className="menu-block" id="append-menu-header">
+              <div className={`menu-overlay ${isActive ? "active" : ""}`} />
+              <nav
+                className={`menu-block ${isActive ? "active" : ""}`}
+                id="append-menu-header"
+              >
                 <div className="mobile-menu-head">
                   <div className="go-back">
                     <i className="fa-solid fa-angle-left" />
                   </div>
                   <div className="current-menu-title" />
-                  <div className="mobile-menu-close">×</div>
+                  <div className="mobile-menu-close" onClick={handleMenuClick}>
+                    ×
+                  </div>
                 </div>
                 <ul className="site-menu-main">
                   <li className="nav-item nav-item-has-children">
@@ -201,6 +210,7 @@ const Navbar = () => {
               <div className="block lg:hidden">
                 <button
                   id="openBtn"
+                  onClick={handleMenuClick}
                   className="hamburger-menu mobile-menu-trigger"
                 >
                   <span />

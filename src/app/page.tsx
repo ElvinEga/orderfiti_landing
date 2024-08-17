@@ -885,18 +885,17 @@ export default function Home() {
                       className="mb-[30px] h-[60px] w-auto"
                     />
                     <div>
-                      <div className="mb-4 text-2xl font-semibold -tracking-[0.5] text-ColorBlack">
+                      <div className="mb-2 text-2xl font-semibold -tracking-[0.5] text-ColorBlack">
                         Give us a call
                       </div>
                       <p>
-                        Give us a ring at{" "}
                         <a
                           href="tel:+01234567890"
                           className="font-semibold hover:text-ColorBlue"
                         >
-                          (+254 70123 567)
-                        </a>{" "}
-                        . Every monday-friday from 9 am to 5 pm.
+                          +254 729 511 517 <br /> +254 736 236 494
+                        </a>
+                        <br />. Every monday-friday from 9 am to 5 pm.
                       </p>
                     </div>
                   </div>

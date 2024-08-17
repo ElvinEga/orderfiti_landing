@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
                       <Image
                         src="/assets/img/logo-white.png"
                         className="w-48"
-                        alt="Masco"
+                        alt="Orderfiti"
                         width={109}
                         height={24}
                       />
@@ -150,20 +151,20 @@ const Footer = () => {
                     {/* Footer Navbar */}
                     <ul className="flex flex-col gap-y-[10px] capitalize">
                       <li>
-                        <a
+                        <Link
                           className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
-                          href="/signup"
+                          href="https://orderfiti.twisac.xyz/#/signup"
                         >
                           Signup
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
-                          href="/login"
+                          href="https://orderfiti.twisac.xyz/#/login"
                         >
                           Login
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a
@@ -194,54 +195,24 @@ const Footer = () => {
                     {/* Footer Navbar */}
                     <ul className="flex flex-col gap-y-[10px] capitalize">
                       <li>
-                        <a
-                          href="https://www.example.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
-                        >
-                          Support
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.example.com/"
+                        <Link
+                          href="/policy"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
                         >
                           Privacy policy
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://www.example.com/"
+                        <Link
+                          href="/terms"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
                         >
                           Terms &amp; Conditions
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.example.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
-                        >
-                          Strategic finance
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.example.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline"
-                        >
-                          Video guide
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
